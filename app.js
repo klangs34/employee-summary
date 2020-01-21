@@ -35,7 +35,8 @@ async function init() {
         const returnManagerData = () => {
 
             console.log(managerTemplate);
-            let setId = managerTemplate.replace("ID", `Id: ${manager.id}`);
+            let setRole = managerTemplate.replace("ManagerName", `${manager.name}`)
+            let setId = setRole.replace("ID", `Id: ${manager.id}`);
             let mailtoEmail = setId.replace("mailto:Email", `mailto:${manager.email}`);
             let showEmail = mailtoEmail.replace("ShowEmail", `${manager.email}`);
             let officeNum = showEmail.replace("OfficeNumber", `OfficeNumber: ${manager.getOfficeNumber()}`)
