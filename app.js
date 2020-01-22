@@ -106,40 +106,6 @@ async function init() {
             }
         })
             
-            //console.log(templateHtml)
-                
-            // fs.readFile(templateURL, "utf8", (err, data) => {
-            //     //create team member html file
-            //     let setRole = data.replace("Name", `${val.name}`);
-            //     let setId = setRole.replace("ID", `Id: ${manager.id}`);
-            //     let mailtoEmail = setId.replace("mailto:Email", `mailto:${manager.email}`);
-            //     let showEmail = mailtoEmail.replace("ShowEmail", `${manager.email}`);
-            //     if(val.role === "Employee") {
-            //         memberRole = showEmail.replace("Title", `Title: ${val.title}`);
-            //     }
-            //     if(val.role === "Engineer"){
-            //         memberRole = showEmail.replace("GitHub", `Github: ${val.github}`);
-            //     }
-            //     if(val.role === "Intern") {
-            //         memberRole = showEmail.replace("School", `School: ${val.school}`);
-            //     }
-            //     return memberRole;
-            // });
-
-       // });
-
-            //console.log(memberRole);
-            
-            // //add closing html text to html string
-            // managerHtml += templateHtml + "</body></html>";
-            // //append html string to main.html
-            // console.log(managerHtml)
-
-            //join manger html to team html
-           //teamMembers.unshift(manager);
-   
-            
-            //const mainTemplate = await fsAppendFileAsync('./templates/main.html', managerHtml);
     } catch (error) {
         console.log("message: " + error);
     }
