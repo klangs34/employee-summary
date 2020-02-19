@@ -4,4 +4,4 @@ summarize employee roster
 As a manager I want to generate a webpage that displays my team's basic info
 so that I have quick access to emails and GitHub profiles
 
-![See program gif](employee-summary.gif)
+![See program gif](img/giphy.gif)
