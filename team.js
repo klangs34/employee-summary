@@ -6,13 +6,29 @@ async function teamInit() {
         {
             type: "confirm",
             name: "add",
-            message: "Do you want to add another team members?",
+            message: "Do you want to add another team member?",
             default: true
         },
         {
             type: "input",
             name: "name",
             message: "Team member's name?",
+            when: answer => {
+                return answer.add === true;
+            }
+        },
+        {
+            type: "input",
+            name: "id",
+            message: "Team Member's ID?",
+            when: answer => {
+                return answer.add === true;
+            }
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "Member email?",
             when: answer => {
                 return answer.add === true;
             }
@@ -35,7 +51,7 @@ async function teamInit() {
             name: "school",
             message: "Attending school/university?",
             when: answer => {
-                return (answer.role === "Intern") && (answer.add === true);
+                return answer.role === "Intern";
             }
         },
         {
@@ -43,7 +59,7 @@ async function teamInit() {
             name: "title",
             message: "Employee title?",
             when: answer => {
-                return (answer.role === "Employee") && (answer.add === true);
+                return answer.role === "Employee";
             }
         },
         {
@@ -51,7 +67,7 @@ async function teamInit() {
             name: "github",
             message: "Engineer's github username?",
             when: answer => {
-                return (answer.role === "Engineer") && (answer.add === true);
+                return answer.role === "Engineer";
             }
         }
     ])
