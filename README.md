@@ -1,15 +1,18 @@
-## employee-summary
-summarize employee roster
+# employee-summary
 
-# user story
+## user story
 As a manager I want to generate a webpage that displays my team's basic info
 so that I have quick access to emails and GitHub profiles
 
 # Business Context
-This app allows you to build a team roster via command line, and then have the output saved to a nicely styled html page.  The final output will be saved in your "Templates" directory as "main.html".  Use this file wherever you see fit...i.e. it can be implemented in your company's existing website as a static page.
+This app allows you to build a team roster via command line, and then have the output saved to a nicely styled html page.  Input basic information about your emplyee roster and the final output will be saved in your "Templates" directory as an html file (main.html).  Use this file wherever you see fit...i.e. it can be implemented in your company's existing website as a static page or behind a firewall for internal use only.
 
 # Technology
 This app takes advantage of Node's built-in fs library that reads and writes data to and from a file.  The app uses a series of html templates based on employee role to pull the entire roster template together (main.html). 
+
+## Catch a glimpse of the app here:
+
+![employee-summary](employeeSummary.gif) 
 
 ## Installation
 1. Fork the respository
